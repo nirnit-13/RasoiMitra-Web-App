@@ -2,9 +2,11 @@
 
 A modern, interactive web application for discovering recipes with detailed nutritional information, step-by-step cooking instructions, and video tutorials. Built with a clean architecture featuring a Node.js backend and vanilla JavaScript frontend.
 
-![RasoiMitra Banner](https://img.shields.io/badge/Recipe-Finder-ff6a88?style=for-the-badge)
+[![GitHub Repository](https://img.shields.io/badge/GitHub-RasoiMitra-ff6a88?style=for-the-badge&logo=github)](https://github.com/nirnit-13/RasoiMitra-Web-App)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+**Live Demo:** [View Project](https://github.com/nirnit-13/RasoiMitra-Web-App)
 
 ## ✨ Features
 
@@ -102,8 +104,8 @@ rasoimitra/
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/rasoimitra.git
-cd rasoimitra
+git clone https://github.com/nirnit-13/RasoiMitra-Web-App.git
+cd RasoiMitra-Web-App
 ```
 
 2. **Install backend dependencies**
@@ -302,7 +304,7 @@ npm install
 
 Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
+1. Fork the repository: [RasoiMitra-Web-App](https://github.com/nirnit-13/RasoiMitra-Web-App)
 2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
@@ -323,12 +325,12 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📧 Contact
 
 For questions or support:
-- Create an issue on GitHub
-- Email: your.email@example.com
+- Create an issue on [GitHub](https://github.com/nirnit-13/RasoiMitra-Web-App/issues)
+- Repository: [RasoiMitra-Web-App](https://github.com/nirnit-13/RasoiMitra-Web-App)
 
 ## 🌟 Show Your Support
 
-If you like this project, please give it a ⭐ on GitHub!
+If you like this project, please give it a ⭐ on [GitHub](https://github.com/nirnit-13/RasoiMitra-Web-App)!
 
 ---
 
