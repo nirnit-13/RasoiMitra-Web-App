@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results | RasoiMitra</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/search-results.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" onclick="window.location.href='home.html'">
+        <img src="images/rasoimitra-logo.png" alt="RasoiMitra">
+        <span>RasoiMitra</span>
+      </div>
+      <div class="nav-search">
+        <input type="text" id="nav-search-input" placeholder="Search recipes...">
+        <button id="nav-search-btn">🔍</button>
+      </div>
+      <div class="nav-links">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="liked-recipes.html" class="nav-link">
+          <span class="heart-icon">❤️</span>
+          Liked Recipes
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="back-nav">
+      <button class="back-btn" onclick="history.back()">← Back</button>
+    </div>
+
+    <section class="results-section">
+      <h2 class="section-title" id="results-title">Search Results</h2>
+      <div class="loader" id="loader"></div>
+      <div class="recipe-grid" id="recipe-grid"></div>
+      <div class="no-results" id="no-results" style="display: none;">
+        <p>No recipes found. Try a different search term.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/search-results.js"></script>
+</body>
+</html>

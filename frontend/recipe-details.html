@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Details | RasoiMitra</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/recipe-details.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo" onclick="window.location.href='home.html'">
+        <img src="images/rasoimitra-logo.png" alt="RasoiMitra">
+        <span>RasoiMitra</span>
+      </div>
+      <div class="recipe-name-nav" id="recipe-name-nav"></div>
+      <div class="nav-links">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="liked-recipes.html" class="nav-link">
+          <span class="heart-icon">❤️</span>
+          Liked Recipes
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="back-nav">
+      <button class="back-btn" onclick="history.back()">← Back</button>
+      <button class="like-btn" id="like-btn">
+        <span class="heart" id="heart-icon">🤍</span>
+      </button>
+    </div>
+
+    <div class="loader" id="loader"></div>
+    
+    <article class="recipe-details" id="recipe-details" style="display: none;">
+      <div class="recipe-header">
+        <img id="recipe-image" src="" alt="Recipe Image" class="recipe-image">
+        <div class="recipe-title-section">
+          <h1 id="recipe-title"></h1>
+          <div class="recipe-meta">
+            <span class="meta-item" id="prep-time"></span>
+            <span class="meta-item" id="servings"></span>
+            <span class="meta-item" id="cuisine"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-content">
+        <section class="nutrition-section">
+          <h2>📊 Nutritional Information</h2>
+          <div class="nutrition-grid" id="nutrition-grid">
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="calories">-</span>
+              <span class="nutrient-label">Calories</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="protein">-</span>
+              <span class="nutrient-label">Protein</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="carbs">-</span>
+              <span class="nutrient-label">Carbs</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="fat">-</span>
+              <span class="nutrient-label">Fat</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="fiber">-</span>
+              <span class="nutrient-label">Fiber</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="sugar">-</span>
+              <span class="nutrient-label">Sugar</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="sodium">-</span>
+              <span class="nutrient-label">Sodium</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="cholesterol">-</span>
+              <span class="nutrient-label">Cholesterol</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="saturatedFat">-</span>
+              <span class="nutrient-label">Saturated Fat</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="potassium">-</span>
+              <span class="nutrient-label">Potassium</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="vitaminA">-</span>
+              <span class="nutrient-label">Vitamin A</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="vitaminC">-</span>
+              <span class="nutrient-label">Vitamin C</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="vitaminB6">-</span>
+              <span class="nutrient-label">Vitamin B6</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="calcium">-</span>
+              <span class="nutrient-label">Calcium</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="iron">-</span>
+              <span class="nutrient-label">Iron</span>
+            </div>
+            <div class="nutrition-card">
+              <span class="nutrient-value" id="magnesium">-</span>
+              <span class="nutrient-label">Magnesium</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="ingredients-section">
+          <h2>🧂 Ingredients</h2>
+          <ul class="ingredients-list" id="ingredients-list"></ul>
+        </section>
+
+        <section class="instructions-section">
+          <h2>📋 Step-by-Step Instructions</h2>
+          <ol class="instructions-list" id="instructions-list"></ol>
+        </section>
+
+        <section class="video-section" id="video-section" style="display: none;">
+          <h2>🎥 Video Tutorial</h2>
+          <div class="video-container">
+            <iframe id="video-player" 
+                    width="100%" 
+                    height="500" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+            </iframe>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <div class="error-message" id="error-message" style="display: none;">
+      <p>Unable to load recipe details. Please try again later.</p>
+      <button class="back-btn" onclick="history.back()">← Go Back</button>
+    </div>
+  </main>
+
+  <script src="js/recipe-details.js"></script>
+</body>
+</html>
